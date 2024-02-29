@@ -8,7 +8,7 @@ import { blogTheme } from './blog-theme'
 export default defineConfig({
   extends: blogTheme,
   lang: 'zh-cn',
-  // base: '/blog/',
+  base: '/blog/',
   title: 'xkfe·blog',
   description: '粥里有勺糖的博客主题，基于 vitepress 实现',
   lastUpdated: true,
@@ -37,7 +37,7 @@ export default defineConfig({
     // },
     nav: [
       { text: '首页', link: '/' },
-      { text: '前端', 
+      { text: '前端',
         items: [
           { text: 'HTML', link: '/frontend/html/' },
           { text: 'CSS', link: '/frontend/css/' },
@@ -46,7 +46,7 @@ export default defineConfig({
           { text: 'React', link: '/frontend/react/' },
           { text: 'Node', link: '/frontend/node/' },
           { text: 'TypeScript', link: '/frontend/typescript/' },
-        ] 
+        ]
       },
       { text: '后端',
         items: [
@@ -58,7 +58,7 @@ export default defineConfig({
           { text: 'Redis', link: '/backend/redis/' },
         ]
       },
-      { text: '关于', link: '/about.html' }, 
+      { text: '关于', link: '/about.html' },
     ],
     socialLinks: [
       {
