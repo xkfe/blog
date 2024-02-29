@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "private": true,
+  "author": "xkfe",
+  "license": "GPL",
+  "homepage": "https://xkfe.github.io/blog",
+  "scripts": {
+    "dev": "vitepress dev docs --port 88 --host",
+    "build": "NODE_ENV=production vitepress build docs",
+    "serve": "vitepress serve docs",
+    "preview": "vitepress preview docs --port 8080",
+    "preinstall": "npx only-allow bun || npx only-allow pnpm"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@sugarat/theme": "^0.2.22",
+    "element-plus": "^2.5.3",
+    "vue": "3.4.15"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "sass": "^1.64.1",
+    "typescript": "^5.1.6",
+    "vitepress": "1.0.0-rc.40"
+  }
+}
