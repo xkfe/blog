@@ -10,8 +10,8 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: |
-        bun install
-        bun run build
+        npm install
+        npm run build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
