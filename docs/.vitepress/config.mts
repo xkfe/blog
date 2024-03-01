@@ -8,7 +8,7 @@ import { blogTheme } from './blog-theme'
 export default defineConfig({
   extends: blogTheme,
   lang: 'zh-cn',
-  base: '/blog/',
+  // base: '/blog/',
   title: 'xkfe·blog',
   description: '粥里有勺糖的博客主题，基于 vitepress 实现',
   lastUpdated: true,
