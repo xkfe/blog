@@ -15,3 +15,14 @@
 .blog-footer p:first-child {
   margin-bottom: 6px;
 }
+
+.VPDoc {
+  .content main img {
+    width: 100%;
+    height: auto;
+    max-height: max-content;
+  }
+  code {
+    padding: 0 14px !important;
+  }
+}

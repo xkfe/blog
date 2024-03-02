@@ -1,0 +1,17 @@
+/* 所有变量：https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css */
+/* 自定义主题色示例，如下 */
+
+/* 浅色模式使用的变量 */
+html[theme] {
+  --vp-custom-block-tip-bg: #f9f9fa;
+  --vp-custom-block-tip-text: #059669;
+  --vp-custom-block-tip-border: #10b981;
+}
+
+/* 深色模式使用的变量 */
+html[theme].dark {
+  --vp-custom-block-tip-bg: #313136;
+}
+
+/* 覆盖默认变量 */
+/* html[theme],html[theme].dark {} */
