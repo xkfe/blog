@@ -1,5 +1,5 @@
 ---
-hidden: true
+publish: false
 ---
 
 # JavaScript
