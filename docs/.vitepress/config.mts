@@ -10,13 +10,16 @@ export default defineConfig({
   lang: 'zh-cn',
   // base: '/blog/',
   title: 'xkfe·blog',
-  description: '粥里有勺糖的博客主题，基于 vitepress 实现',
+  description: 'vitepress博客;xkfe·blog 记录随笔与学习笔记;前端学习/资源分享;',
   lastUpdated: true,
   appearance: 'dark',
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     // 展示 2,3 级标题在目录中
     outline: {
@@ -30,11 +33,11 @@ export default defineConfig({
 
     // 设置logo
     logo: 'https://qn.kaife.cn/blog/20240301213255-logo.webp',
-    // editLink: {
-    //   pattern:
-    //     'https://github.com/ATQQ/sugar-blog/tree/master/packages/blogpress/:path',
-    //   text: '去 GitHub 上编辑内容'
-    // },
+    editLink: {
+      pattern:
+        'https://github.com/xkfe/blog/tree/master/docs/:path',
+      text: '在 GitHub 打开'
+    },
     nav: [
       { text: '首页', link: '/' },
       { text: '前端',

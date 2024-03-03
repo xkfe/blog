@@ -3,6 +3,12 @@ import { getThemeConfig } from '@sugarat/theme/node'
 
 // 所有配置项，详见文档: https://theme.sugarat.top/
 const blogTheme = getThemeConfig({
+  comment: {
+    repo: 'xkfe/blog',
+    repoId: 'R_kgDOLaPFrA',
+    category: 'Announcements',
+    categoryId: 'DIC_kwDOLaPFrM4CdrjP',
+  },
   // 页脚
   footer: {
     message: `xkfe © 2024-${new Date().getFullYear()} Created by 小凯同学`,
