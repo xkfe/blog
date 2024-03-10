@@ -32,7 +32,8 @@ export default defineConfig({
     lastUpdatedText: '上次更新于',
 
     // 设置logo
-    logo: 'https://qn.kaife.cn/blog/20240301213255-logo.webp',
+    // logo: 'https://qn.kaife.cn/blog/20240301213255-logo.webp',
+    logo: 'https://qn.kaife.cn/blog/20240310151748-logo.svg',
     editLink: {
       pattern:
         'https://github.com/xkfe/blog/tree/master/docs/:path',

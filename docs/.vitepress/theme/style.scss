@@ -11,6 +11,19 @@
     rgba(var(--bg-gradient-home), 1) 0%,
     rgba(var(--bg-gradient-home), 0) 150%
   );
+  .content-wrapper .blog-item .info-part .title {
+    display: inline;
+    margin-bottom: 6ox;
+    padding-bottom: 2px;
+    background: linear-gradient(to right, #ec695c,var(--vp-c-brand-1)) no-repeat right bottom;
+    background-size: 0px 2px;
+    transition: background-size 0.6s, color 0.5s;
+  }
+  .content-wrapper .blog-item:hover .info-part .title {
+    color: var(--vp-c-brand-1);
+    background-position-x: left;
+    background-size: 100% 2px;
+  }
 }
 
 .VPDoc {

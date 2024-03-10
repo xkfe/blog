@@ -1,5 +1,6 @@
 ---
 sticky: 1
+date: 2024-03-03 20:00:00
 descriptionHTML: '
 <span style="color:var(--description-font-color);">1分钟内完成自己的博客创建</span>
 <pre style="background-color: #292b30; padding: 15px; border-radius: 10px;" class="shiki material-theme-palenight"><code>
