@@ -1,3 +1,7 @@
+html[theme]:not(.dark) .blog-search .nav-search-btn-wait .search-tip {
+  color: #3C3C43;
+}
+
 .VPHome {
   // 自定义首页背景图
   &::before {
@@ -37,16 +41,14 @@
   }
 }
 
-.blog-footer  {
-  p:first-child {
-    margin-bottom: 6px;
-  }
-}
 .VPNav {
   .blog-search .nav-search-btn-wait {
     border-color: #f6f6f69c;
   }
 }
-html[theme]:not(.dark) .blog-search .nav-search-btn-wait .search-tip {
-  color: #3C3C43;
+
+.blog-footer  {
+  p:first-child {
+    margin-bottom: 6px;
+  }
 }
