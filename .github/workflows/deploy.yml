@@ -1,5 +1,9 @@
 name: GitHub Actions Build and Deploy
 on: [push]
+# 设置时区
+env:
+  TZ: Asia/Shanghai
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
