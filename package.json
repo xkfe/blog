@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "xkfe-blog",
   "version": "1.0.0",
   "private": true,
   "author": "xkfe",
@@ -7,14 +7,15 @@
   "homepage": "https://xkfe.github.io/blog",
   "scripts": {
     "dev": "vitepress dev docs --port 88 --host",
-    "build": "NODE_ENV=production vitepress build docs",
-    "serve": "vitepress serve docs",
-    "preview": "vitepress preview docs --port 8080"
+    "build": "NODE_ENV=production vitepress build docs && esno docs/scripts/build.ts",
+    "serve": "npm run build && vitepress serve docs",
+    "preview": "npm run build && vitepress preview docs"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "@sugarat/theme": "^0.2.22",
     "element-plus": "^2.5.3",
+    "vite-plugin-pwa": "^0.19.2",
     "vue": "3.4.15"
   },
   "directories": {
@@ -23,6 +24,6 @@
   "devDependencies": {
     "sass": "^1.64.1",
     "typescript": "^5.1.6",
-    "vitepress": "1.0.0-rc.40"
+    "vitepress": "^1.0.0-rc.45"
   }
 }

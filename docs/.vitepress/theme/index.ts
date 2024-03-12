@@ -1,5 +1,6 @@
 import { h } from 'vue'
 import BlogLayout from '../components/BlogLayout.vue'
+import ReloadPrompt from '../components/ReloadPrompt.vue'
 
 // 自定义样式重载
 import './style.scss'
@@ -8,8 +9,7 @@ import './style.scss'
 import './user-theme.css'
 
 export default {
-  // @ts-ignore
   Layout: h(BlogLayout, undefined, {
-    'layout-bottom': () => ({}) ,
-  })
+    'layout-bottom': () => (ReloadPrompt) ,
+  }),
 }

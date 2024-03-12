@@ -1,14 +1,14 @@
 import { defineConfig } from 'vitepress'
-
 // 导入主题的配置
 import { blogTheme } from './blog-theme'
+import { pwa } from '../scripts/pwa'
+import { buildEnd } from '../scripts/build'
 
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
 export default defineConfig({
   extends: blogTheme,
   lang: 'zh-cn',
-  // base: '/blog/',
   title: 'xkfe·blog',
   description: 'vitepress博客;xkfe·blog 记录随笔与学习笔记;前端学习/资源分享;',
   lastUpdated: true,
@@ -70,5 +70,12 @@ export default defineConfig({
         link: 'https://github.com/xkfe/blog'
       }
     ]
-  }
+  },
+  vite: {
+    plugins: [
+      // @ts-ignore
+      pwa()
+    ]
+  },
+  buildEnd
 })
