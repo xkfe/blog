@@ -1,5 +1,5 @@
-<h1 style="text-align:center;">
-  <img src="https://github.com/xkfe/blog/assets/129662190/cee83930-54ec-4997-bab7-22a308e9eb4d" width="50" style="vertical-align: middle;"/>xkfe·blog
+<h1 align="center" style="text-align:center;">
+  <img src="https://github.com/xkfe/blog/assets/129662190/cee83930-54ec-4997-bab7-22a308e9eb4d" width="40" style="vertical-align: middle;"/>xkfe·blog
 </h1>
 
 
