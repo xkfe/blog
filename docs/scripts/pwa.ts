@@ -4,6 +4,7 @@ export function pwa() {
   return VitePWA({
     outDir: '.vitepress/dist',
     registerType: 'prompt',
+    includeAssets: ['favicon.svg'],
     includeManifestIcons: false,
     selfDestroying: true,
     manifest: {

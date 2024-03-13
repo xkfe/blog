@@ -3,6 +3,7 @@ import 'element-plus/theme-chalk/src/notification.scss'
 import { ElNotification } from 'element-plus'
 import { useRegisterSW } from 'virtual:pwa-register/vue'
 import { useEventListener, useIntervalFn, useOnline,watchOnce } from '@vueuse/core'
+import { onMounted, watchEffect } from 'vue';
 
 defineOptions({
   name: 'ReloadPrompt',
@@ -42,7 +43,9 @@ watchOnce(
     })
     return
   }
+})
 
+watchEffect(() => {
   if (needRefresh.value) {
     const notify = ElNotification({
       title: '发现新版本，请点击按钮更新',
@@ -84,7 +87,9 @@ watchOnce(
   }
 })
 
-
+onMounted(() => {
+  console.log('ReloadPrompt mounted')
+})
 </script>
 
 <template>
