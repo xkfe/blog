@@ -4,7 +4,7 @@
   "private": "true",
   "scripts": {
     "dev": "vitepress dev --port 88 --host",
-    "build": "NODE_ENV=production vitepress build && esno scripts/build.mts",
+    "build": "NODE_ENV=production vitepress build",
     "serve": "npm run build && serve .vitepress/dist",
     "preview": "npm run build && vitepress preview"
   }
