@@ -7,9 +7,10 @@
   "homepage": "https://xkfe.github.io/blog",
   "scripts": {
     "dev": "vitepress dev docs --port 88 --host",
-    "build": "NODE_ENV=production vitepress build docs && esno docs/scripts/build.ts",
-    "serve": "npm run build && vitepress serve docs",
-    "preview": "npm run build && vitepress preview docs"
+    "docs": "pnpm -C docs run dev",
+    "docs:build": "pnpm -C docs run build",
+    "docs:serve": "pnpm -C docs run serve",
+    "docs:preview": "pnpm -C docs run preview"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
