@@ -12,7 +12,14 @@ jobs:
       uses: actions/checkout@v3 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       with:
         persist-credentials: false
+    - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 21.5.0
     - name: Install and Build
+      uses: pnpm/action-setup@v3 # docs https://pnpm.io/continuous-integration#github-actions
+        with:
+            version: 8  # Optional: specify a pnpm version
       run: |
         pnpm install
         pnpm run docs:build
