@@ -43,7 +43,17 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 
 <template>
-  <BlogTheme.Layout></BlogTheme.Layout>
+  <BlogTheme.Layout>
+    <template #layout-top>
+      <slot name="layout-top" />
+    </template>
+    <template #layout-bottom>
+      <slot name="layout-bottom" />
+    </template>
+    <template #nav-screen-content-after>
+      <slot name="nav-screen-content-after" />
+    </template>
+  </BlogTheme.Layout>
 </template>
 
 

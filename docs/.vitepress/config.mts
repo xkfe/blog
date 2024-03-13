@@ -1,8 +1,6 @@
 import { defineConfig } from 'vitepress'
 // 导入主题的配置
 import { blogTheme } from './blog-theme'
-import { pwa } from '../scripts/pwa.mts'
-import { buildEnd } from '../scripts/build.mts'
 
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
@@ -71,10 +69,4 @@ export default defineConfig({
       }
     ]
   },
-  vite: {
-    plugins: [
-      pwa()
-    ]
-  },
-  buildEnd
 })

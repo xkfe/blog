@@ -25,7 +25,7 @@ export function pwa() {
         },
         {
           src: 'https://qn.kaife.cn/blog/20240312134105-pwa.svg',
-          sizes: '155x155',
+          sizes: '512x512',
           type: 'image/svg',
           purpose: 'any maskable',
         },
