@@ -9,7 +9,7 @@ defineOptions({
   name: 'ReloadPrompt',
 })
 
-const intervalMS = 30 * 1000
+const intervalMS = 30 * 1000 * 10 // 300s 5min
 const IS_PROD = process.env.NODE_ENV === 'production'
 
 const online = useOnline()
@@ -20,9 +20,15 @@ const {
 } = useRegisterSW({
   immediate: true,
   onRegisteredSW(_swScriptUrl, registration) {
+    console.log('_swScriptUrl :>> ', _swScriptUrl);
+    console.log('object :>> ', registration);
     IS_PROD && registration && useIntervalFn(async () => {
-      // 检查更新，如果vite.config.ts配置为autoUpdate，此操作将直接触发更新，并刷新页面激活更新
-      await registration.update()
+      try {
+        // 检查更新，如果vite.config.ts配置为autoUpdate，此操作将直接触发更新，并刷新页面激活更新
+        await registration.update()
+      } catch (e) {
+        console.error('SW Update Error', e)
+      }
     }, intervalMS)
   },
 })
