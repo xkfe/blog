@@ -7,8 +7,11 @@ export function pwa() {
     includeAssets: ['favicon.svg'],
     includeManifestIcons: false,
     selfDestroying: true,
+    scope: '/',
+    base: '/',
     manifest: {
       id: '/',
+      scope: '/',
       name: 'xkfe·blog',
       short_name: 'xkfe·blog',
       description: 'xkfe·blog 记录随笔与学习笔记;前端学习/资源分享;',
