@@ -25,9 +25,10 @@ const {
     IS_PROD && registration && useIntervalFn(async () => {
       try {
         // 检查更新，如果vite.config.ts配置为autoUpdate，此操作将直接触发更新，并刷新页面激活更新
-        await registration.update()
+        const response = await fetch('/sw.js', { cache: 'no-store' });
+        response && response.status === 200 && await registration?.update();
       } catch (e) {
-        console.error('SW Update Error', e)
+        console.log('cannot ping/update sw.js', e)
       }
     }, intervalMS)
   },
