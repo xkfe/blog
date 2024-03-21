@@ -15,17 +15,17 @@ export const pwa: Partial<VitePWAOptions> = {
     theme_color: '#ffffff',
     icons: [
       {
-        src: 'https://qn.kaife.cn/blog/pwa-192x192.png',
+        src: 'images/pwa-192x192.png',
         sizes: '192x192',
         type: 'image/png',
       },
       {
-        src: 'https://qn.kaife.cn/blog/pwa-512x512.png',
+        src: 'images/pwa-512x512.png',
         sizes: '512x512',
         type: 'image/png',
       },
       {
-        src: 'https://qn.kaife.cn/blog/20240312134105-pwa.svg',
+        src: 'images/pwa.svg',
         sizes: '512x512',
         type: 'image/svg',
         purpose: 'any maskable',

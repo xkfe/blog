@@ -237,9 +237,9 @@ Error: The deploy step encountered an error: The process '/usr/bin/git' failed w
 
 2、在域名管理平台添加解析，将域名解析到GitHub Pages的域名上
 
-![](https://qn.kaife.cn/blog/20240302211906-Snipaste_2024-03-02_21-18-34.webp)
+![](/images/20240302211906-Snipaste_2024-03-02_21-18-34.webp)
 
-![](https://qn.kaife.cn/blog/20240302212150-Snipaste_2024-03-02_21-20-53.webp)
+![](/images/20240302212150-Snipaste_2024-03-02_21-20-53.webp)
 
 
 ## 添加 giscus 评论

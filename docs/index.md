@@ -2,7 +2,7 @@
 layout: home
 # 首页部分元素定制
 blog:
- logo: https://qn.kaife.cn/blog/20240301213255-logo.webp
+ logo: images/avatar.webp
  name: '小凯同学的个人博客'
  motto: '一名前端小白的学习之路'
  inspiring:
