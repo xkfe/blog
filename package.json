@@ -8,10 +8,8 @@
   "homepage": "https://xkfe.github.io/blog",
   "scripts": {
     "dev": "vitepress dev docs --port 88 --host",
-    "docs": "pnpm -C docs run dev",
-    "docs:build": "pnpm -C docs run build",
-    "docs:serve": "pnpm -C docs run serve",
-    "docs:preview": "pnpm -C docs run preview"
+    "build": "NODE_ENV=production vitepress build docs",
+    "preview": "vitepress preview docs"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -25,6 +23,7 @@
     "doc": "docs"
   },
   "devDependencies": {
+    "@vite-pwa/vitepress": "^0.4.0",
     "sass": "^1.64.1",
     "typescript": "^5.1.6",
     "vitepress": "^1.0.0-rc.45"

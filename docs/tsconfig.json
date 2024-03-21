@@ -8,7 +8,8 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "types": [
-      "vite-plugin-pwa/vue",
+      "vite-plugin-pwa",
+      "vite-plugin-pwa/client",
       "vitepress"
     ],
     "strict": true,

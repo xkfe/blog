@@ -1,10 +1,12 @@
 import { defineConfig } from 'vitepress'
+import { withPwa } from '@vite-pwa/vitepress'
+import { pwa } from './scripts/pwa'
 // 导入主题的配置
 import { blogTheme } from './blog-theme'
 
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withPwa(defineConfig({
   extends: blogTheme,
   lang: 'zh-cn',
   title: 'xkfe·blog',
@@ -69,4 +71,5 @@ export default defineConfig({
       }
     ]
   },
-})
+  pwa
+}))
